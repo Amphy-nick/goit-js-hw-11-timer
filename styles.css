@@ -1,0 +1,49 @@
+:root {
+   --main-text-color: rgb(0, 0, 0);
+   --additional-bg-color: rgba(132, 210, 230, 0.8);
+   --border-color: rgb(60, 9, 243);
+   --main-bg-color: #164bf7cc;
+   --main-text-font: 'Urbanist', sans-serif;
+ }
+ 
+ html {
+   box-sizing: border-box;
+ }
+ 
+ *,
+ *::after,
+ *::before {
+   box-sizing: inherit;
+ }
+ 
+ body {
+   background-color: var(--main-bg-color);
+   font-family: var(--main-text-font);
+   color: var(--main-text-color);
+   letter-spacing: 0.08em;
+   font-size: 60px;
+   font-weight: 700;
+   
+ }
+ 
+ .timer {
+   position: absolute;
+   display: flex;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   
+ }
+
+ .field {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: var(--additional-bg-color);
+   padding: 25px;
+   border: 20px groove var(--border-color);
+ }
+
+ .field:not(:last-child){
+   margin-right: 20px;
+ }
