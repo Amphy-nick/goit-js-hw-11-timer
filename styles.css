@@ -42,6 +42,7 @@
    background-color: var(--additional-bg-color);
    padding: 25px;
    border: 20px groove var(--border-color);
+   border-radius: 10%;
  }
 
  .field:not(:last-child){
