@@ -38,7 +38,7 @@ class CountdownTimer {
   finishTimer(time) {
     if (time <= 0) {
       clearInterval(this.setInProgress);
-      refs. timerId.textContent = "Sale is over";
+      refs. timerId.textContent = "Sales is over";
     }
   }
 };
@@ -46,5 +46,5 @@ class CountdownTimer {
 
 new CountdownTimer({
   selector: '#timer-1',
-  targetDate: new Date('Jul 17, 2020'),
+  targetDate: new Date('Dec 31, 2021'),
 });
